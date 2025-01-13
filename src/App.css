@@ -1,0 +1,187 @@
+/* -------- PROPRIÉTÉS COMMUNES À TOUTES LES TAILLES -------- */
+
+body{
+  /* Fond et contour */
+  background-color: cornflowerblue;
+  border: 2px solid black;
+}
+
+#root{
+  /* Position des éléments internes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* GRAND CONTENEUR */
+.grand_conteneur{
+  /* Fond */
+  background-color: rgb(0, 160, 0);
+
+ /* Position des éléments internes */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+/* Liste */
+ol{
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/* Éléments <li> */
+li{
+  margin-bottom: 10px;
+}
+
+/* Tâches */
+.txt_tache{
+  /* Taille */
+  font-size: 18px;
+
+  /* Espace externe */
+  margin-right: 10px;
+}
+
+/* Boutons */
+button{
+  /* Souris */
+  cursor: pointer;
+
+  /* Durée d'animation */
+  transition-duration: 0.3s;
+}
+
+/* Boutons Supprimer, Monter et Descendre */
+.btn_suppr_tache, .btn_monter_tache, .btn_desc_tache{
+  /* Contour */
+  border: none;
+
+  /* Espace externe */
+  margin-left: 10px; 
+}
+
+/* Survol des boutons Supprimer */
+.btn_suppr_tache:hover{
+  /* Fond */
+  background-color: rgb(220, 0, 0);
+}
+
+/* Survol des boutons Monter */
+.btn_monter_tache:hover{
+  /* Mouvement */
+  transform: translateY(-3px);
+}
+
+/* Survol des boutons Descendre */
+.btn_desc_tache:hover{
+  /* Mouvement */
+  transform: translateY(3px);
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* VERSION TRÈS PETITE */
+@media all and (max-width: 344px)
+{
+  /* Texte du champ de saisie et bouton "Ajouter" */
+  input[type="text"], .btn_ajout_tache{
+    /* Taille */
+    font-size: 18px;
+  }
+
+  /* Numéros et textes de la liste */
+  ol, .txt_tache{
+    /* Taille */
+    font-size: 20px;
+  }
+
+  /* Boutons Supprimer, Monter et Descendre */
+  .btn_suppr_tache, .btn_monter_tache, .btn_desc_tache{
+    /* Dimensions */
+    width: 25px; 
+    height: 25px;
+
+    /* Taille */
+    font-size: 18px;
+  }
+}
+
+/* VERSION PETITE */
+@media all and (min-width: 345px) and (max-width: 540px)
+{
+  /* Texte du champ de saisie et bouton "Ajouter" */
+  input[type="text"], .btn_ajout_tache{
+    /* Taille */
+    font-size: 18px;
+  }
+
+  /* Numéros et textes de la liste */
+  ol, .txt_tache{
+    /* Taille */
+    font-size: 22px;
+  }
+
+  /* Boutons Supprimer, Monter et Descendre */
+  .btn_suppr_tache, .btn_monter_tache, .btn_desc_tache{
+    /* Dimensions */
+    width: 25px; 
+    height: 25px;
+
+    /* Taille */
+    font-size: 18px;
+  }
+}
+
+/* VERSION MOYENNE */
+@media all and (min-width: 541px) and (max-width: 912px)
+{
+  /* Texte du champ de saisie et bouton "Ajouter" */
+  input[type="text"], .btn_ajout_tache{
+    /* Taille */
+    font-size: 18px;
+  }
+
+  /* Numéros et textes de la liste */
+  ol, .txt_tache{
+    /* Taille */
+    font-size: 22px;
+  }
+
+  /* Boutons Supprimer, Monter et Descendre */
+  .btn_suppr_tache, .btn_monter_tache, .btn_desc_tache{
+    /* Dimensions */
+    width: 30px; 
+    height: 30px;
+
+    /* Taille */
+    font-size: 18px;
+  }
+}
+
+/* VERSION GRANDE */
+@media all and (min-width: 913px) and (max-width: 1280px)
+{
+  /* Texte du champ de saisie et bouton "Ajouter" */
+  input[type="text"], .btn_ajout_tache{
+    /* Taille */
+    font-size: 18px;
+  }
+
+  /* Numéros et textes de la liste */
+  ol, .txt_tache{
+    /* Taille */
+    font-size: 22px;
+  }
+
+  /* Boutons Supprimer, Monter et Descendre */
+  .btn_suppr_tache, .btn_monter_tache, .btn_desc_tache{
+    /* Dimensions */
+    width: 30px; 
+    height: 30px;
+
+    /* Taille */
+    font-size: 18px;
+  }
+}
